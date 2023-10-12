@@ -45,7 +45,7 @@ const FavoritesCoins = ({ searchQuery, setSearchQuery }) => {
   }
 
   if (favorites.length === 0) {
-    return <h3 style={{marginBlockEnd: '100%'}}>No favorites added yet!</h3>;
+    return <h3 style={{ marginBlockEnd: "100%" }}>No favorites added yet!</h3>;
   }
 
   return (
