@@ -2,6 +2,8 @@
   width: 100%;
   max-width: 900px;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -10.5rem;
 }
 .coin-data-container .coins-table {
   -webkit-text-size-adjust: 100%;
