@@ -73,7 +73,7 @@ const CoinDetailPage = () => {
           ATH: {coin.ath} <em className="vsCurrency">{getVsCurrencyLogo()}</em>
         </p>
         <p>ATH changes(%): {coin.ath_change_percentage}</p>
-        <p>ATH Date: {coin.ath_date}</p>
+        <p>ATH Date: {new Date(coin.ath_date).toLocaleDateString()}</p>
       </section>
       <section className="coin-atl">
         <h3 className="section-title">All-Time Low</h3>
@@ -81,7 +81,7 @@ const CoinDetailPage = () => {
           ATL: {coin.atl} <em className="vsCurrency">{getVsCurrencyLogo()}</em>
         </p>
         <p>ATL changes(%): {coin.atl_change_percentage}</p>
-        <p>ATL Date: {coin.atl_date}</p>
+        <p>ATL Date: {new Date(coin.atl_date).toLocaleDateString()}</p>
       </section>
       <section className="coin-market-cap">
         <h3 className="section-title">Market Cap</h3>
@@ -131,7 +131,7 @@ const CoinDetailPage = () => {
       </section>
       <section className="coin-last-update">
         <h3 className="section-title">Last Update</h3>
-        <p>Last Update: {coin.last_updated}</p>
+        <p>Last Update: {new Date(coin.last_updated).toLocaleDateString()}</p>
       </section>
     </div>
   );
