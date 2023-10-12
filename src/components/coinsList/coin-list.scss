@@ -26,6 +26,9 @@
       box-sizing: inherit;
       box-shadow: none;
       background-color: #fafafa;
+      position: sticky;
+      top: 3rem;
+      height: 2rem;
 
       .table-header-row {
         text-align: center;
@@ -76,13 +79,19 @@
       }
     }
 
+    @media (max-width: 475px) {
+      .table-head {
+        top: 4rem !important;
+        height: 2rem !important;
+      }
+    }
+
     @media (max-width: 430px) {
       font-size: 0.8rem;
 
       // Name column
       th:nth-child(4) {
         text-align: center !important;
-
       }
       td:nth-child(4) {
         max-width: 4.5rem;
