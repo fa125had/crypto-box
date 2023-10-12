@@ -51,9 +51,11 @@ const CoinRow = ({ coin, vsCurrency }) => {
 
   // Format numbers
   const formatNumbers = (number) => {
-    return number && Math.abs(number) < 1
-      ? number.toFixed(4)
-      : number.toFixed(2);
+    if (number) {
+      return number && Math.abs(number) < 1
+        ? number.toFixed(4)
+        : number.toFixed(2);
+    }
   };
 
   // Determine favorite icon source
