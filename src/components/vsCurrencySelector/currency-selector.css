@@ -13,7 +13,11 @@
   color: #fff;
   border: none;
   outline: none;
-  padding: 0.25rem 0.35rem;
+  padding: 0.53rem 0.35rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border-radius: 0;
 }
 .currency-selector-container #currency-selector:hover {
   cursor: pointer;

@@ -70,12 +70,12 @@ const CoinRow = ({ coin, vsCurrency }) => {
         <img className="favorite-icon" src={favoriteIconSrc} alt="favorite" />
       </td>
 
-      <td className="rank-wrapper">
-        <CoinRank coinRank={coin.market_cap_rank} />
-      </td>
-
       <td className="logo-wrapper">
         <CoinLogo src={coin.image} name={coin.name} />
+      </td>
+
+      <td className="rank-wrapper">
+        <CoinRank coinRank={coin.market_cap_rank} />
       </td>
 
       <td className="name-wrapper">

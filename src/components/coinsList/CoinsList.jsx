@@ -65,8 +65,8 @@ const CoinsList = ({ searchQuery }) => {
           <thead className="table-head">
             <tr className="table-header-row">
               <th className="header-item">Fav</th>
-              <th className="header-item">Rank</th>
               <th className="header-item">Logo</th>
+              <th className="header-item">Rank</th>
               <th className="header-item">Name</th>
               <th className="header-item">Price</th>
               <th className="header-item">Market Cap</th>

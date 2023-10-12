@@ -13,7 +13,12 @@
     color: #fff;
     border: none;
     outline: none;
-    padding: 0.25rem 0.35rem;
+    padding: 0.53rem 0.35rem;
+    // Remove default appearance for iOS
+    -webkit-appearance: none; 
+    // General reset for other browsers
+    appearance: none; 
+    border-radius: 0; 
 
     &:hover {
       cursor: pointer;

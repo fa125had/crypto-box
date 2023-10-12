@@ -2,6 +2,8 @@
   width: 100%;
   max-width: 900px;
   font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -10.5rem;
 }
 .coin-data-container .coins-table {
   -webkit-text-size-adjust: 100%;
@@ -25,6 +27,9 @@
   box-sizing: inherit;
   box-shadow: none;
   background-color: #fafafa;
+  position: sticky;
+  top: 3rem;
+  height: 2rem;
 }
 .coin-data-container .coins-table .table-head .table-header-row {
   text-align: center;
@@ -63,6 +68,12 @@
   .coin-data-container .coins-table th:nth-child(7),
   .coin-data-container .coins-table td:nth-child(7) {
     display: none;
+  }
+}
+@media (max-width: 475px) {
+  .coin-data-container .coins-table .table-head {
+    top: 4rem !important;
+    height: 2rem !important;
   }
 }
 @media (max-width: 430px) {
