@@ -58,6 +58,11 @@ const CoinsList = ({ searchQuery }) => {
     return <ClipLoader />;
   }
 
+  // Nothing found during search
+  if (filteredCoins.length === 0) {
+    return <h3 style={{ marginBlockEnd: "100%" }}>No Search Result!</h3>;
+  }
+
   return (
     <>
       <section className="coin-data-container" id="coins-table">
@@ -88,27 +93,29 @@ const CoinsList = ({ searchQuery }) => {
           </tbody>
         </table>
       </section>
-      <div className="pagination-container">
-        <button
-          className="pagination-btn"
-          onClick={() => setCurrentPage(currentPage - 1)}
-          disabled={currentPage === 1}
-        >
-          Previous
-        </button>
-        <button
-          className="pagination-btn"
-          onClick={() => setCurrentPage(currentPage + 1)}
-          disabled={currentPage === totalPages}
-        >
-          Next
-        </button>
-        <div>
-          <p className="page-numbers">
-            {currentPage} of {totalPages}
-          </p>
+      {!searchQuery && (
+        <div className="pagination-container">
+          <button
+            className="pagination-btn"
+            onClick={() => setCurrentPage(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            Previous
+          </button>
+          <button
+            className="pagination-btn"
+            onClick={() => setCurrentPage(currentPage + 1)}
+            disabled={currentPage === totalPages}
+          >
+            Next
+          </button>
+          <div>
+            <p className="page-numbers">
+              {currentPage} of {totalPages}
+            </p>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
