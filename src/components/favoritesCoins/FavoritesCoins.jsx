@@ -64,7 +64,7 @@ const FavoritesCoins = ({ searchQuery, setSearchQuery }) => {
             <th className="header-item">Market Cap</th>
             <th className="header-item">Highest Price(24h)</th>
             <th className="header-item">Lowest Price(24h)</th>
-            <th className="header-item change-24h">24h Change</th>
+            <th className="header-item change-24h">24h Changes</th>
           </tr>
         </thead>
         <tbody className="table-body">
