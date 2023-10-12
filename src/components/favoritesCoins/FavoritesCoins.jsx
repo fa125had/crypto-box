@@ -20,7 +20,10 @@ const FavoritesCoins = ({ searchQuery, setSearchQuery }) => {
     }
   }, [errorMessage, setErrorMessage]);
 
+  // search trough fav coins
   let filteredCoins = [];
+  let favIsEmpty = false;
+
   if (coinsData && favorites) {
     filteredCoins = coinsData.filter((coin) => favorites.includes(coin.id));
 
@@ -42,8 +45,15 @@ const FavoritesCoins = ({ searchQuery, setSearchQuery }) => {
     return <ClipLoader />;
   }
 
+  if (favorites.length === 0) {
+    return <h3>No favorites added yet!</h3>;
+  }
+
   return (
-    <section className="coin-data-container" id="coins-table">
+    <section
+      className="coin-data-container coin-fav-container"
+      id="coins-table"
+    >
       <table className="coins-table">
         <thead className="table-head">
           <tr className="table-header-row">

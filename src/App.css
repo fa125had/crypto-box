@@ -61,4 +61,7 @@
   .App .main-container .main-header .main-title {
     font-size: 1.5rem !important;
   }
+}
+.App .coin-fav-container {
+  position: static !important;
 }/*# sourceMappingURL=App.css.map */

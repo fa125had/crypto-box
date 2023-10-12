@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   order: 1;
+  gap: 0.5rem;
 }
 .navbar-container .navbar-item {
   text-decoration: none;
