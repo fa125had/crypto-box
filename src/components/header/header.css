@@ -1,0 +1,57 @@
+.header-container {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background: #fffefe;
+  z-index: 190;
+  flex-direction: column;
+  margin-block-end: 0.5rem;
+  border-bottom: 1px solid #dcd7d7;
+}
+.header-container .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-inline: 0.25rem;
+}
+.header-container .header .left-section,
+.header-container .header .right-section,
+.header-container .header .nav-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container .header .center-section {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0.15rem;
+}
+@media only screen and (max-width: 470px) {
+  .header-container .header .left-section {
+    justify-content: flex-start;
+  }
+  .header-container .header .nav-section {
+    justify-content: flex-start;
+    margin-inline: 0.25rem;
+  }
+  .header-container .header .nav-section .navbar-container {
+    gap: 0.25rem;
+  }
+  .header-container .header .right-section {
+    width: 100%;
+    justify-content: center;
+  }
+  .header-container .header .center-section {
+    flex-direction: column !important;
+  }
+  .header-container .header .center-section .countdown-container {
+    font-size: 0.7rem !important;
+    padding-inline: 0.25rem !important;
+  }
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,15 @@
+.primary-btn {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.33rem 0.35rem;
+  text-wrap: nowrap;
+}
+.primary-btn:hover {
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+}/*# sourceMappingURL=button.css.map */

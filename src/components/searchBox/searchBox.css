@@ -1,0 +1,27 @@
+.searchBox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 10rem;
+  order: 3;
+}
+.searchBox-container .searchBox {
+  border: 1px solid #dcd7d7;
+  text-transform: uppercase;
+  padding: 0.31rem;
+  width: 100%;
+  padding-inline-start: 0.25rem;
+  font-size: 18px;
+}
+.searchBox-container .searchBox:focus {
+  outline: none;
+}
+.searchBox-container .searchBox::-moz-placeholder {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.searchBox-container .searchBox::placeholder {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}/*# sourceMappingURL=searchBox.css.map */

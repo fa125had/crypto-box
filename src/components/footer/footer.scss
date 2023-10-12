@@ -1,0 +1,35 @@
+.footer-container {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fffefe;
+  flex-direction: column;
+  margin-block-start: 1rem;
+  border-top: 1px solid #dcd7d7;
+
+  .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #year {
+      padding-inline: 1rem;
+    }
+
+    #gitLink {
+      text-decoration: none;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.85rem;
+      background-color: gray;
+      color: #fff;
+      padding: 0.33rem 0.35rem;
+
+      &:hover {
+        background-color: rgb(0, 0, 0);
+      }
+    }
+  }
+}

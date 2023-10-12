@@ -1,0 +1,21 @@
+.currency-selector-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  order: 2;
+}
+.currency-selector-container #currency-selector {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.35rem;
+}
+.currency-selector-container #currency-selector:hover {
+  cursor: pointer;
+  background-color: #000;
+}/*# sourceMappingURL=currency-selector.css.map */

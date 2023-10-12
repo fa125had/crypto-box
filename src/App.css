@@ -1,0 +1,44 @@
+.App {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.App .main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.App .main-container .pagination-container {
+  width: 100%;
+  text-align: center;
+  margin-block: 1rem;
+}
+.App .main-container .pagination-container .pagination-btn {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  background-color: gray;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.33rem 0.35rem;
+  text-wrap: nowrap;
+  margin-inline: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+.App .main-container .pagination-container .pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.App .main-container .pagination-container .pagination-btn:not(:disabled):hover {
+  background-color: rgb(0, 0, 0);
+}/*# sourceMappingURL=App.css.map */

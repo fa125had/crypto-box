@@ -1,0 +1,30 @@
+.coin-row {
+  text-align: right;
+
+  &:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  td {
+    padding: 0.9rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .fav-img-wrapper {
+    .favorite-icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  .logo-wrapper {
+    .coin-log {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .price-wrapper {
+    text-wrap: nowrap;
+  }
+}

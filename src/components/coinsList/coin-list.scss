@@ -1,0 +1,120 @@
+// CoinsList SCSS
+.coin-data-container {
+  width: 100%;
+  max-width: 900px;
+  font-family: "Poppins", sans-serif;
+
+  .coins-table {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.4285em;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 15px -3px;
+    border: none;
+    width: 100%;
+    background: #fff;
+    margin: 1em 0;
+    border-radius: 0.28571429rem;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 1em;
+    white-space: nowrap;
+
+    .table-head {
+      white-space: nowrap;
+      box-sizing: inherit;
+      box-shadow: none;
+      background-color: #fafafa;
+
+      .table-header-row {
+        text-align: center;
+
+        .header-item {
+          font-weight: 300;
+          padding-inline: 0.25rem;
+          text-align: right;
+        }
+      }
+    }
+
+    .table-body {
+      -webkit-text-size-adjust: 100%;
+      line-height: 1.4285em;
+      font-family: Lato, Helvetica, Arial, sans-serif;
+      text-align: left;
+      color: rgba(0, 0, 0, 0.87);
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 1em;
+      white-space: nowrap;
+      box-sizing: inherit;
+      background: rgb(255, 255, 255);
+    }
+
+    @media (max-width: 790px) {
+      // Hide Market Cap column on smaller screens
+      th:nth-child(6),
+      td:nth-child(6) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 690px) {
+      // Hide Lowest price column on smaller screens
+      th:nth-child(8),
+      td:nth-child(8) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 570px) {
+      // Hide highest price column on smaller screens
+      th:nth-child(7),
+      td:nth-child(7) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 430px) {
+      font-size: 0.8rem;
+
+      // Name column
+      th:nth-child(4) {
+        text-align: center !important;
+
+      }
+      td:nth-child(4) {
+        max-width: 4.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  .pagination-btn {
+    padding: 0.8rem 1.2rem;
+    margin: 0 0.9rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+
+  .page-numbers {
+    font-size: 16px;
+  }
+}

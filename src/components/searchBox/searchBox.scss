@@ -1,0 +1,26 @@
+.searchBox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 10rem;
+  order: 3;
+
+  .searchBox {
+    border: 1px solid #dcd7d7;
+    text-transform: uppercase;
+    padding: 0.31rem;
+    width: 100%;
+    padding-inline-start: 0.25rem;
+    font-size: 18px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 0.9rem;
+      text-transform: capitalize;
+    }
+  }
+}

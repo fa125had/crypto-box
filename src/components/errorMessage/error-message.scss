@@ -1,0 +1,27 @@
+.error-message-container {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  right: 20%;
+  border: 1px solid;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #fff;
+
+  .close-btn {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.33rem 0.35rem;
+    text-wrap: nowrap;
+    margin: 0.25rem;
+
+    &:hover {
+      background-color: #000;
+    }
+  }
+}
