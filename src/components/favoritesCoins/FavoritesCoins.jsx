@@ -22,7 +22,6 @@ const FavoritesCoins = ({ searchQuery, setSearchQuery }) => {
 
   // search trough fav coins
   let filteredCoins = [];
-  let favIsEmpty = false;
 
   if (coinsData && favorites) {
     filteredCoins = coinsData.filter((coin) => favorites.includes(coin.id));
