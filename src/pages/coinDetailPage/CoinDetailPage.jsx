@@ -110,19 +110,24 @@ const CoinDetailPage = () => {
       )}
       <section className="coin-changes-24h">
         <h3 className="section-title">24h Changes</h3>
-        <p>
-          High 24h: {coin.high_24h}{" "}
-          <em className="vsCurrency">{getVsCurrencyLogo()}</em>
-        </p>
-        <p>
-          Low 24h: {coin.low_24h}{" "}
-          <em className="vsCurrency">{getVsCurrencyLogo()}</em>
-        </p>
-        <p>
-          Price changes 24h: {coin.price_change_24h}{" "}
-          <em className="vsCurrency">{getVsCurrencyLogo()}</em>
-        </p>
-        <p>Price changes 24h(%): {coin.price_change_percentage_24h}</p>
+        <section>
+          {" "}
+          <p>
+            High 24h: {coin.high_24h}{" "}
+            <em className="vsCurrency">{getVsCurrencyLogo()}</em>
+          </p>
+          <p>
+            Low 24h: {coin.low_24h}{" "}
+            <em className="vsCurrency">{getVsCurrencyLogo()}</em>
+          </p>
+        </section>
+        <section>
+          <p>
+            Price changes 24h: {coin.price_change_24h}
+            <em className="vsCurrency">{getVsCurrencyLogo()}</em>
+          </p>
+          <p>Price changes 24h(%): {coin.price_change_percentage_24h}</p>
+        </section>
       </section>
       <section className="coin-last-update">
         <h3 className="section-title">Last Update</h3>
