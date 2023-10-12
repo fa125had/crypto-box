@@ -1,4 +1,4 @@
-# Cryptocurrency Tracking App
+# First 200 Cryptos!
 
 ## Table of Contents
 
@@ -19,6 +19,10 @@
 
 This is a React-based web application that allows users to track the latest information about first 200 cryptocurrencies sorted by market cap. The app provides real-time data, including price, market cap, and 24-hour changes.
 
+[Live URL](https://first-200-cryptos.netlify.app)
+
+- Also ou can find the last version of this project with vanilla JavaScript [HERE](https://crypto-stalker-web.netlify.app/)
+
 ## Features
 
 - Real-time cryptocurrency tracking
@@ -33,9 +37,11 @@ This is a React-based web application that allows users to track the latest info
 
 - React
 - React Router
-- Local Storage
+- Custom Hooks
+- Context
+- Local / session Storage
+- API's server rate limit controller
 - SCSS
-- React-spinners for loading indicators
 
 ## Components
 
@@ -63,7 +69,7 @@ This is a React-based web application that allows users to track the latest info
 
 #### `UpdateNotification`
 
-- Displays the countdown for the next update.
+- Displays the countdown for the next update from server.
 
 #### `VsCurrencySelector`
 
